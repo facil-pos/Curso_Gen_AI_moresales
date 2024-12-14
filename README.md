@@ -34,7 +34,9 @@ Hugging Face, es de las empresas y plataformas más importantes en el boom de la
 
 * Crea una cuenta en https://huggingface.co/
 * spaces : Esta es una herramienta para implementar demos de ML, a grades rasgos es nos permite desplegar proyectos pequeños con AI https://huggingface.co/docs/hub/spaces-overview
-* spaces : Esta es una herramienta para implementar demos de ML, a grades rasgos es nos permite desplegar proyectos pequeños con AI https://huggingface.co/docs/hub/spaces-overview
+* repository : Funciona como un respositorio de git, nos permite almacenar nuestros modelos, dataset y spaces.
+* models : Es una colección de modelos de IA para tareas variadas.
+
 
 ### Huggingface Api
 
@@ -79,3 +81,12 @@ La Ingeniería de Prompt es la práctica de diseñar, estructurar y optimizar la
 
 En esencia, es el arte y la técnica de "hablar" con un modelo de IA para aprovechar al máximo su capacidad.
 
+Puedes configurar algunos parámetros para obtener diferentes resultados.
+
+- Temperature : En resumen, cuanto menor sea la temperatura, más deterministas serán los resultados en el sentido de que siempre se elige el siguiente token más probable. Aumentar la temperatura podría llevar a más aleatoriedad y fomentar resultados más diversos o creativos.
+
+- Max Tokens (Longitud): Establece la longitud máxima de la respuesta. Para respuestas concisas y directas, es adecuado un rango más bajo (por ejemplo, 50-100 tokens). Para explicaciones o narraciones más detalladas, puede utilizarse un rango superior (por ejemplo, 150-500 tokens).
+
+- Penalización de frecuencia: Reduce la probabilidad de que el modelo repita la misma palabra o frase. Un valor bajo (por ejemplo, 0,0-0,5) permite cierta repetición, lo que puede ser útil para enfatizar en la escritura o el discurso. Un ajuste más alto (por ejemplo, 0,5-1,0) minimiza la repetición, lo que resulta útil para generar contenidos diversos y expansivos.
+
+- Penalización por presencia: Disuade al modelo de mencionar repetidamente el mismo tema o concepto. Un valor bajo (p. ej., 0,0-0,5) es adecuado para contenidos centrados en un tema específico, mientras que un valor alto (p. ej., 0,5-1,0) anima al modelo a explorar una gama más amplia de temas, útil para realizar lluvias de ideas o explorar diferentes aspectos de un tema.
